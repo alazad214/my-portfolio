@@ -19,7 +19,7 @@ class MobileHeader extends StatelessWidget {
           boxShadow: const [
             BoxShadow(color: Colors.black, spreadRadius: 0.5, blurRadius: 5)
           ]),
-      child: Row(
+      child: const Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
