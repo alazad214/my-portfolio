@@ -19,55 +19,63 @@ const List<Map> platformItem = [
 
 const List<Map> skillItems = [
   {
-    "img": "assets/images/skill/flutter.png",
+    "img": "assets/images/skills/flutter.png",
     "title": "Flutter",
   },
   {
-    "img": "assets/images/skill/dart.png",
+    "img": "assets/images/skills/dart.png",
     "title": "Dart",
   },
   {
-    "img": "assets/images/skill/oop.png",
+    "img": "assets/images/skills/oop.png",
     "title": "OOP",
   },
   {
-    "img": "assets/images/skill/restapi.png",
+    "img": "assets/images/skills/restapi.png",
     "title": "Rest Api",
   },
   {
-    "img": "assets/images/skill/api_inti.png",
+    "img": "assets/images/skills/api_inti.png",
     "title": "API Integation",
   },
   {
-    "img": "assets/images/skill/firebase.png",
+    "img": "assets/images/skills/firebase.png",
     "title": "Firebase",
   },
   {
-    "img": "assets/images/skill/map.png",
+    "img": "assets/images/skills/getx.png",
+    "title": "Getx",
+  },
+  {
+    "img": "assets/images/skills/map.png",
     "title": "Google Map",
   },
   {
-    "img": "assets/images/skill/payment.png",
+    "img": "assets/images/skills/payment.png",
     "title": "Payment Gateway",
   },
   {
-    "img": "assets/images/skill/admob.jpg",
+    "img": "assets/images/skills/admob.jpg",
     "title": "Admob",
   },
   {
-    "img": "assets/images/skill/figma.png",
+    "img": "assets/images/skills/figma.png",
     "title": "Figma",
   },
   {
-    "img": "assets/images/skill/github.png",
+    "img": "assets/images/skills/adobe.png",
+    "title": "Android Studio",
+  },
+  {
+    "img": "assets/images/skills/github.png",
     "title": "Github",
   },
   {
-    "img": "assets/images/skill/vscode.png",
+    "img": "assets/images/skills/vscode.png",
     "title": "Vs Code",
   },
   {
-    "img": "assets/images/skill/androidstudio.png",
+    "img": "assets/images/skills/androidstudio.png",
     "title": "Android Studio",
   },
 ];
