@@ -5,10 +5,8 @@ import 'package:portfolio/pages/projects.dart';
 import 'package:portfolio/section/header/desktop_header.dart';
 import 'package:portfolio/section/header/mobile_header.dart';
 
-
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
-
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constaints) {
@@ -17,21 +15,29 @@ class Homepage extends StatelessWidget {
         child: Scaffold(
           backgroundColor: const Color(0xFF232227),
           body: SafeArea(
-            child: Column(
-              children: [
-                //1st container
-                if (constaints.maxWidth >= 650)
-                  const DesktopHeader()
-                else
-                  const MobileHeader(),
-
-                // TabBarView
-                const Expanded(
-                  child: TabBarView(
-                    children: [AboutMe(), Projects(), Articles()],
-                  ),
+            child: Center(
+              child: ConstrainedBox(
+                constraints: BoxConstraints(
+                  maxWidth: 900
                 ),
-              ],
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    //1st container
+                    if (constaints.maxWidth >= 650)
+                      const DesktopHeader()
+                    else
+                      const MobileHeader(),
+
+                    // TabBarView
+                    const Expanded(
+                      child: TabBarView(
+                        children: [AboutMe(), Projects(), Articles()],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ),
           ),
         ),
