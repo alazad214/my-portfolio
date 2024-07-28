@@ -8,9 +8,10 @@ class Articles extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFF232227),
       body: Center(
-        child: Text("Articles",style: TextStyle(
-            color: Colors.white
-        ),),
+        child: Text(
+          "Articles",
+          style: TextStyle(color: Colors.white),
+        ),
       ),
     );
   }
