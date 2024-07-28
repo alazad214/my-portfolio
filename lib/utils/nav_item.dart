@@ -1,14 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-List<String> nav_titles = [
+List<String> navTitles = [
   "Home",
   "Skills",
   "Projects",
   "Contact",
   "Blog",
 ];
-List<IconData> nav_icons = [
+List<IconData> navIcons = [
   Icons.home,
   Icons.handyman_rounded,
   Icons.apps,

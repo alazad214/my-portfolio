@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return const GetMaterialApp(
       title: 'portfolio',
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: Homepage(),
     );
   }
 }
