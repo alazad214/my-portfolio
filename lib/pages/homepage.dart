@@ -4,8 +4,7 @@ import 'package:portfolio/pages/articles.dart';
 import 'package:portfolio/pages/projects.dart';
 import 'package:portfolio/section/header/desktop_header.dart';
 import 'package:portfolio/section/header/mobile_header.dart';
-import 'package:portfolio/widgets/custom_resume_button.dart';
-import 'package:portfolio/widgets/custom_tabBar.dart';
+
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -18,24 +17,21 @@ class Homepage extends StatelessWidget {
         child: Scaffold(
           backgroundColor: const Color(0xFF232227),
           body: SafeArea(
-            child: Padding(
-              padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
-              child: Column(
-                children: [
-                  //1st container
-                  if (constaints.maxWidth >= 650)
-                    const DesktopHeader()
-                  else
-                    const MobileHeader(),
+            child: Column(
+              children: [
+                //1st container
+                if (constaints.maxWidth >= 650)
+                  const DesktopHeader()
+                else
+                  const MobileHeader(),
 
-                  // TabBarView
-                  const Expanded(
-                    child: TabBarView(
-                      children: [AboutMe(), Projects(), Articles()],
-                    ),
+                // TabBarView
+                const Expanded(
+                  child: TabBarView(
+                    children: [AboutMe(), Projects(), Articles()],
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         ),
