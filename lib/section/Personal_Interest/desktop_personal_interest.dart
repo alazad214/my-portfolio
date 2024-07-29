@@ -42,7 +42,7 @@ class DesktopPersonalInterest extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(
                           vertical: 2, horizontal: 7.0),
                       margin: const EdgeInsets.symmetric(
-                          horizontal: 5, vertical: 5),
+                          horizontal: 5.0, vertical: 5.0),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5.0),
                           color: const Color(0xFF232227),
@@ -50,24 +50,24 @@ class DesktopPersonalInterest extends StatelessWidget {
                             BoxShadow(
                                 color: Colors.black,
                                 spreadRadius: 0.5,
-                                blurRadius: 5)
+                                blurRadius: 5.0)
                           ]),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           const SizedBox(
-                            height: 5,
+                            height: 5.0,
                           ),
                           CustomText2(
                             text: personalInterest[i]["title"],
-                            fontsize: 18,
+                            fontsize: 18.0,
                             color: Colors.blueAccent,
                           ),
                           CustomText1(
                             text: personalInterest[i]["dis"],
                           ),
                           const SizedBox(
-                            width: 20,
+                            width: 20.0,
                           ),
                         ],
                       ),

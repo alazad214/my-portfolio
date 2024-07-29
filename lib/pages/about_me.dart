@@ -110,7 +110,7 @@ class AboutMe extends StatelessWidget {
                                     const SizedBox(
                                       height: 10.0,
                                     ),
-                                    Row(
+                                    Wrap(
                                       children: [
                                         for (int i = 0;
                                             i < contactImage.length;
