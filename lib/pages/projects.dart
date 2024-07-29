@@ -14,7 +14,7 @@ class Projects extends StatelessWidget {
         backgroundColor: const Color(0xFF232227),
         body: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20, top: 15),
+            padding: const EdgeInsets.only(left: 20.0, right: 20.0, top: 15.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -28,6 +28,8 @@ class Projects extends StatelessWidget {
                 const Align(
                   alignment: Alignment.centerLeft,
                   child: CustomText1(
+                    fontsize: 14.0,
+                    color: Colors.white70,
                     text:
                         "Some stories of my coding life are presented through this project. Here is \na collection of projects that showcase my skills in Flutter, Dart, Firebase, \nRest API, Getx, Local Storage, Responsive Design, Payment gateway, admob",
                   ),
@@ -36,13 +38,13 @@ class Projects extends StatelessWidget {
                   height: 30.0,
                 ),
                 Wrap(
-                  runSpacing: 20,
-                  spacing: 20,
+                  runSpacing: 20.0,
+                  spacing: 20.0,
                   children: [
                     for (int i = 0; i < 15; i++)
                       Container(
-                        height: 270,
-                        width: 270,
+                        height: 270.0,
+                        width: 270.0,
                         clipBehavior: Clip.antiAlias,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(5.0),
@@ -53,7 +55,7 @@ class Projects extends StatelessWidget {
                               BoxShadow(
                                   color: Colors.black,
                                   spreadRadius: 0.5,
-                                  blurRadius: 5)
+                                  blurRadius: 5.0)
                             ]),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.start,
@@ -73,7 +75,8 @@ class Projects extends StatelessWidget {
                                 horizontal: 10.0,
                               ),
                               child: CustomText1(
-                                maxline: 6.0,
+                                maxline: 6,
+                                color: Colors.white70,
                                 text:
                                     "Some stories of my coding life are presented through this project.Some stories of my coding life are presented through this project. Some stories of my coding life are presented through this project. Some stories of my coding life are presented through this project. Some stories of my coding life are presented through this project. Some stories of my coding life are presented through this project. Some stories of my coding life are presented through this project. Some stories of my coding life are presented through this project. Some stories of my coding life are presented through this project. Some stories of my coding life are presented through this project.  Here is \na collection of projects that showcase my skills in Flutter, Dart, Firebase, \nRest API, Getx, Local Storage, Responsive Design, Payment gateway, admob",
                               ),
@@ -81,18 +84,23 @@ class Projects extends StatelessWidget {
                             const Spacer(),
                             Container(
                               padding: const EdgeInsets.symmetric(
-                                  horizontal: 15, vertical: 16),
+                                  horizontal: 15.0, vertical: 16.0),
                               color: Colors.blue.shade900,
-                              child: Row(
+                              child: const Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                 CustomButton(text: "Source",hovertext: "Source",),
-                                  const SizedBox(
-                                    width: 10,
+                                  CustomButton(
+                                    text: "Source",
+                                    hovertext: "Source",
                                   ),
-                                  CustomButton(text: "Preview",hovertext: "Preview",)
-
+                                  SizedBox(
+                                    width: 10.0,
+                                  ),
+                                  CustomButton(
+                                    text: "Preview",
+                                    hovertext: "Preview",
+                                  )
                                 ],
                               ),
                             )

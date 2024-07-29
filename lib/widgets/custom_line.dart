@@ -17,16 +17,13 @@ class CustomLine extends StatelessWidget {
           padding: padding ?? const EdgeInsets.only(),
           child: Row(
             children: [
-              Expanded(
-                flex: textflex ?? 1,
-                child: Text(
-                  text!,
-                  overflow: TextOverflow.ellipsis,
-                  maxLines: 1,
-                  style: const TextStyle(
-                    color: Colors.blueAccent,
-                    fontSize: 18,
-                  ),
+              Text(
+                text!,
+                overflow: TextOverflow.ellipsis,
+                maxLines: 1,
+                style: const TextStyle(
+                  color: Colors.blueAccent,
+                  fontSize: 18,
                 ),
               ),
               const SizedBox(
@@ -49,15 +46,12 @@ class CustomLine extends StatelessWidget {
           padding: padding ?? const EdgeInsets.only(),
           child: Row(
             children: [
-              Expanded(
-                flex: textflex ?? 1,
-                child: Text(
-                  text!,
-                  overflow: TextOverflow.ellipsis,
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 18,
-                  ),
+              Text(
+                text!,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 18,
                 ),
               ),
               const SizedBox(
@@ -65,7 +59,7 @@ class CustomLine extends StatelessWidget {
               ),
               Expanded(
                 flex: lineflex ?? 6,
-                child: Divider(
+                child: const Divider(
                   color: Colors.white,
                 ),
               ),

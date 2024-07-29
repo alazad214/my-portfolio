@@ -76,7 +76,6 @@ class DesktopContact extends StatelessWidget {
                     fontsize: 16.0,
                     color: Colors.blueAccent,
                   ),
-                  const SizedBox(height: 10.0),
                   const ListTile(
                     title: CustomText2(
                       text: "Thakkurgaon, Bangladesh",

@@ -11,8 +11,8 @@ class CustomButton extends StatelessWidget {
     return Expanded(
       child: HoverWidget(
         hoverChild: Container(
-          margin: const EdgeInsets.only(right: 10, left: 5),
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+          margin: const EdgeInsets.only(right: 10.0, left: 5.0),
+          padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
           decoration: BoxDecoration(
               color: Colors.teal, borderRadius: BorderRadius.circular(6.0)),
           child: Center(
@@ -28,11 +28,11 @@ class CustomButton extends StatelessWidget {
         ),
         onHover: (event) {},
         child: Container(
-          margin: const EdgeInsets.only(right: 10, left: 5),
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+          margin: const EdgeInsets.only(right: 10.0, left: 5.0),
+          padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(6.0),
-              border: Border.all(color: Colors.blue, width: 2)),
+              border: Border.all(color: Colors.blue, width: 2.0)),
           child: Center(
             child: Text(
               text,
