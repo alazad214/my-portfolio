@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:portfolio/widgets/custom_line.dart';
 
 import '../../utils/platform.dart';
 
@@ -12,24 +12,20 @@ class Skills extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        const Text(
-          "Skills",
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 18,
-          ),
+        CustomLine(
+          text: "Skills",
         ),
         Align(
           alignment: Alignment.center,
           child: Wrap(
-            spacing: 10,
-            runSpacing: 10,
+            spacing: 8.0,
+            runSpacing: 8.0,
             crossAxisAlignment: WrapCrossAlignment.center,
             alignment: WrapAlignment.center,
             children: [
               for (int i = 0; i < skillItems.length; i++)
                 Container(
-                  width: 190,
+                  width: 150,
                   alignment: Alignment.center,
                   padding: const EdgeInsets.symmetric(
                       vertical: 10, horizontal: 5),

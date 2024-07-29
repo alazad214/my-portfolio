@@ -46,6 +46,7 @@ dependencies:
   cloud_firestore: ^4.15.8
   firebase_messaging: ^14.7.19
   shared_preferences:
+  flutter_screenutil: ^5.9.3
 
 dev_dependencies:
   flutter_test:

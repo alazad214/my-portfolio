@@ -58,14 +58,7 @@ const List<Map> skillItems = [
     "img": "assets/images/skills/admob.jpg",
     "title": "Admob",
   },
-  {
-    "img": "assets/images/skills/figma.png",
-    "title": "Figma",
-  },
-  {
-    "img": "assets/images/skills/adobe.png",
-    "title": "Android Studio",
-  },
+
   {
     "img": "assets/images/skills/github.png",
     "title": "Github",
@@ -77,5 +70,13 @@ const List<Map> skillItems = [
   {
     "img": "assets/images/skills/androidstudio.png",
     "title": "Android Studio",
+  },
+  {
+    "img": "assets/images/skills/figma.png",
+    "title": "Figma",
+  },
+  {
+    "img": "assets/images/skills/adobe.png",
+    "title": "Adobe XD",
   },
 ];
