@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hovering/hovering.dart';
 
 import '../../widgets/custom_resume_button.dart';
 import '../../widgets/custom_tabBar.dart';
@@ -19,13 +20,25 @@ class DesktopHeader extends StatelessWidget {
           boxShadow: const [
             BoxShadow(color: Colors.black, spreadRadius: 0.5, blurRadius: 5)
           ]),
-      child:  const Row(
+      child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-    Icon(Icons.code, color: Colors.white, size: 35.0,),
-          CustomTabbar(),
-          CustomResumeButton()
+          HoverWidget(
+            hoverChild: const Icon(
+              Icons.code,
+              color: Colors.blueAccent,
+              size: 35.0,
+            ),
+            onHover: (event) {},
+            child: const Icon(
+              Icons.code,
+              color: Colors.white,
+              size: 30.0,
+            ),
+          ),
+          const CustomTabbar(),
+          const CustomResumeButton()
         ],
       ),
     );
