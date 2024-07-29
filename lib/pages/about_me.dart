@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:hovering/hovering.dart';
+import 'package:portfolio/section/Personal_Interest/desktop_personal_interest.dart';
+import 'package:portfolio/section/Personal_Interest/mobile_personal_interest.dart';
 import 'package:portfolio/section/education/desktop_education.dart';
 import 'package:portfolio/section/education/mobile_education.dart';
 import 'package:portfolio/section/skills/desktop_skills.dart';
 import 'package:portfolio/section/skills/mobile_skills.dart';
+import 'package:portfolio/utils/personal_enterest_string.dart';
 import 'package:portfolio/widgets/custom_line.dart';
 import 'package:portfolio/widgets/custom_text_1.dart';
 import 'package:portfolio/widgets/custom_text_2.dart';
@@ -11,6 +15,7 @@ import 'package:portfolio/widgets/custom_text_2.dart';
 import '../section/main/desktop_main.dart';
 import '../section/main/mobile_main.dart';
 import '../section/skills/skills.dart';
+import '../utils/platform.dart';
 
 class AboutMe extends StatelessWidget {
   const AboutMe({super.key});
@@ -58,6 +63,15 @@ class AboutMe extends StatelessWidget {
                       const SizedBox(
                         height: 20,
                       ),
+             if (constraints.maxWidth >= 650)
+                        const DesktopPersonalInterest()
+                      else
+                        const MobilePersonalInterest(),
+                      const SizedBox(
+                        height: 20,
+                      ),
+
+
                     ],
                   ),
                 ],

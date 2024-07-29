@@ -2,17 +2,22 @@ import 'package:flutter/material.dart';
 
 class CustomText2 extends StatelessWidget {
   final text;
-  const CustomText2({super.key, this.text});
+
+  final overflow;
+  final maxline;
+  final fontsize;
+  final color;
+  const CustomText2({super.key, this.text, this.overflow, this.maxline, this.fontsize, this.color});
 
   @override
   Widget build(BuildContext context) {
-    return        Text(
+    return Text(
       text,
-      overflow: TextOverflow.ellipsis,
-      maxLines: 1,
-      style: const TextStyle(
-        color: Colors.white,
-        fontSize: 24, // Responsive font size
+      overflow: overflow,
+      maxLines: maxline,
+      style:  TextStyle(
+        color: color??Colors.white,
+        fontSize:fontsize?? 24, // Responsive font size
       ),
     );
   }
