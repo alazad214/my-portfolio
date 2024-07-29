@@ -6,7 +6,13 @@ class CustomText1 extends StatelessWidget {
   final maxline;
   final fontsize;
   final color;
-  const CustomText1({super.key, this.text, this.overflow, this.maxline, this.fontsize, this.color});
+  const CustomText1(
+      {super.key,
+      this.text,
+      this.overflow,
+      this.maxline,
+      this.fontsize,
+      this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -14,9 +20,9 @@ class CustomText1 extends StatelessWidget {
       text,
       overflow: overflow,
       maxLines: maxline,
-      style:  TextStyle(
-        color: color??Colors.white,
-        fontSize:fontsize?? 12, // Responsive font size
+      style: TextStyle(
+        color: color ?? Colors.white,
+        fontSize: fontsize ?? 12, // Responsive font size
       ),
     );
   }

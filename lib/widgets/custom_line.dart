@@ -5,57 +5,75 @@ import 'package:hovering/hovering.dart';
 class CustomLine extends StatelessWidget {
   final String? text;
   final padding;
-  const CustomLine({super.key, this.text, this.padding});
+  final textflex;
+  final lineflex;
+  const CustomLine(
+      {super.key, this.text, this.padding, this.textflex, this.lineflex});
 
   @override
   Widget build(BuildContext context) {
     return HoverWidget(
-      hoverChild: Padding(
-        padding: padding??const EdgeInsets.only(),
-        child: Row(
-          children: [
-
-            Text(
-              text!,
-              style: const TextStyle(
-                color: Colors.blueAccent,
-                fontSize: 18,
+        hoverChild: Padding(
+          padding: padding ?? const EdgeInsets.only(),
+          child: Row(
+            children: [
+              Expanded(
+                flex: textflex ?? 1,
+                child: Text(
+                  text!,
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 1,
+                  style: const TextStyle(
+                    color: Colors.blueAccent,
+                    fontSize: 18,
+                  ),
+                ),
               ),
-            ),
-            const SizedBox(width: 10,),
-            const Expanded(
-              child: Divider(
-                color: Colors.blueAccent,
+              const SizedBox(
+                width: 10,
               ),
-            ),
-            const SizedBox(width: 10,),
-          ],
+              Expanded(
+                flex: lineflex ?? 6,
+                child: const Divider(
+                  color: Colors.blueAccent,
+                ),
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+            ],
+          ),
         ),
-      ),
-      onHover: (event) {},
-      child: Padding(
-        padding: padding??const EdgeInsets.only(),
-        child: Row(
-          children: [
-
-            Text(
-              text!,
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 18,
+        onHover: (event) {},
+        child: Padding(
+          padding: padding ?? const EdgeInsets.only(),
+          child: Row(
+            children: [
+              Expanded(
+                flex: textflex ?? 1,
+                child: Text(
+                  text!,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                  ),
+                ),
               ),
-            ),
-            const SizedBox(width: 10,),
-            const Expanded(
-              child: Divider(
-                color: Colors.white,
+              const SizedBox(
+                width: 10,
               ),
-            ),
-            const SizedBox(width: 10,),
-          ],
-        ),
-      )
-    );
-
+              Expanded(
+                flex: lineflex ?? 6,
+                child: Divider(
+                  color: Colors.white,
+                ),
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+            ],
+          ),
+        ));
   }
 }

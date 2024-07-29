@@ -51,13 +51,17 @@ class MobilePersonalInterest extends StatelessWidget {
                           const SizedBox(
                             height: 5.0,
                           ),
-                          CustomText2(
-                            text: personalInterest[i]["title"],
-                            fontsize: 18.0,
-                            color: Colors.blueAccent,
+                          Expanded(
+                            child: CustomText2(
+                              text: personalInterest[i]["title"],
+                              fontsize: 18.0,
+                              color: Colors.blueAccent,
+                            ),
                           ),
-                          CustomText1(
-                            text: personalInterest[i]["dis"],
+                          Expanded(
+                            child: CustomText1(
+                              text: personalInterest[i]["dis"],
+                            ),
                           ),
                           const SizedBox(
                             width: 20.0,
