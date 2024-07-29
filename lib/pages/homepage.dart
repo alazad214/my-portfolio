@@ -17,7 +17,7 @@ class Homepage extends StatelessWidget {
           body: SafeArea(
             child: Center(
               child: ConstrainedBox(
-                constraints: BoxConstraints(
+                constraints: const BoxConstraints(
                   maxWidth: 900
                 ),
                 child: Column(

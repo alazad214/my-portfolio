@@ -6,7 +6,7 @@ class DesktopSkills extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Skills(
+    return const Skills(
       width: 190.0,
     );
   }

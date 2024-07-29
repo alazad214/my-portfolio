@@ -6,7 +6,7 @@ class MobileSkills extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Skills(
+    return const Skills(
       width: 135.0,
     );
   }

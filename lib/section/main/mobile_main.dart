@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:hovering/hovering.dart';
 
 class MobileMain extends StatelessWidget {
   const MobileMain({super.key});
@@ -10,17 +11,28 @@ class MobileMain extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Container(
-          decoration: BoxDecoration(
-            color: Colors.indigoAccent,
-            borderRadius: BorderRadius.circular(4.0),
+        HoverAnimatedContainer(
+          width: 200,
+          height: 200,
+          hoverWidth: 220,
+          hoverHeight: 220,
+          hoverDecoration: BoxDecoration(
+            color: Colors.blue,
+            borderRadius: BorderRadius.circular(8.0),
           ),
-          clipBehavior: Clip.antiAlias,
-          child: Image.asset(
-            'assets/images/azad.jpg',
-            fit: BoxFit.cover,
-            width: 200,
-            height: 200,
+          duration: const Duration(milliseconds: 300),
+          child: Container(
+            decoration: BoxDecoration(
+              color: Colors.indigoAccent,
+              borderRadius: BorderRadius.circular(4.0),
+            ),
+            clipBehavior: Clip.antiAlias,
+            child: Image.asset(
+              'assets/images/azad.jpg',
+              fit: BoxFit.cover,
+              width: 200,
+              height: 200,
+            ),
           ),
         ),
         const SizedBox(height: 20), // Spacing between image and text
