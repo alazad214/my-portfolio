@@ -37,7 +37,8 @@ class Skills extends StatelessWidget {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5.0),
                           color: const Color(0xFF232227),
-                          border: Border.all(color: Colors.blueAccent, width: 1.0),
+                          border:
+                              Border.all(color: Colors.blueAccent, width: 1.0),
                           boxShadow: const [
                             BoxShadow(
                                 color: Colors.black,

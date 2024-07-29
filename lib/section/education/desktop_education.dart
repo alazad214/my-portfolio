@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:hovering/hovering.dart';
 import '../../widgets/custom_line.dart';
 import '../../widgets/custom_text_1.dart';
 import '../../widgets/custom_text_2.dart';
@@ -19,83 +20,167 @@ class DesktopEducation extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Expanded(
-              child: Container(
-                alignment: Alignment.center,
-                padding: const EdgeInsets.symmetric(
-                  vertical: 10, // Responsive padding
-                  horizontal: 5,
+              child: HoverWidget(
+                hoverChild: Container(
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 10, // Responsive padding
+                    horizontal: 5,
+                  ),
+                  margin: const EdgeInsets.symmetric(
+                    horizontal: 5,
+                    vertical: 5,
+                  ),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(
+                        5.0.r), // Responsive border radius
+                    color: const Color(0xFF232227),
+                    border: Border.all(color: Colors.blueAccent, width: 1),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Colors.black,
+                        spreadRadius: 0.5,
+                        blurRadius: 5,
+                      )
+                    ],
+                  ),
+                  child: const Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      CustomText2(text: "Diploma in Computer Technology,"),
+                      CustomText1(
+                        text: "Thakurgaon polytechnic institute,",
+                      ),
+                      CustomText1(
+                        text: "Thakurgaon, Bangladesh.",
+                      ),
+                      CustomText1(
+                        text: "present CGPA: 3.75 out of 4.00",
+                      ),
+                    ],
+                  ),
                 ),
-                margin: const EdgeInsets.symmetric(
-                  horizontal: 5,
-                  vertical: 5,
-                ),
-                decoration: BoxDecoration(
-                  borderRadius:
-                      BorderRadius.circular(5.0.r), // Responsive border radius
-                  color: const Color(0xFF232227),
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Colors.black,
-                      spreadRadius: 0.5,
-                      blurRadius: 5,
-                    )
-                  ],
-                ),
-                child: const Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    CustomText2(text: "Diploma in Computer Technology,"),
-                    CustomText1(
-                      text: "Thakurgaon polytechnic institute,",
-                    ),
-                    CustomText1(
-                      text: "Thakurgaon, Bangladesh.",
-                    ),
-                    CustomText1(
-                      text: "present CGPA: 3.75 out of 4.00",
-                    ),
-                  ],
+                onHover: (event) {},
+                child: Container(
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 10, // Responsive padding
+                    horizontal: 5,
+                  ),
+                  margin: const EdgeInsets.symmetric(
+                    horizontal: 5,
+                    vertical: 5,
+                  ),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(
+                        5.0.r), // Responsive border radius
+                    color: const Color(0xFF232227),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Colors.black,
+                        spreadRadius: 0.5,
+                        blurRadius: 5,
+                      )
+                    ],
+                  ),
+                  child: const Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      CustomText2(text: "Diploma in Computer Technology,"),
+                      CustomText1(
+                        text: "Thakurgaon polytechnic institute,",
+                      ),
+                      CustomText1(
+                        text: "Thakurgaon, Bangladesh.",
+                      ),
+                      CustomText1(
+                        text: "present CGPA: 3.75 out of 4.00",
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
-            const SizedBox(width: 10), // Space between containers
+            const SizedBox(width: 10),
             Expanded(
-              child: Container(
-                alignment: Alignment.center,
-                padding: const EdgeInsets.symmetric(
-                  vertical: 10, // Responsive padding
-                  horizontal: 5,
+              child: HoverWidget(
+                hoverChild: Container(
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 10, // Responsive padding
+                    horizontal: 5,
+                  ),
+                  margin: const EdgeInsets.symmetric(
+                    horizontal: 5,
+                    vertical: 5,
+                  ),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(
+                        5.0.r), // Responsive border radius
+                    color: const Color(0xFF232227),
+                    border: Border.all(color: Colors.blueAccent, width: 1),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Colors.black,
+                        spreadRadius: 0.5,
+                        blurRadius: 5,
+                      )
+                    ],
+                  ),
+                  child: const Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      CustomText2(text: "Secondary School Certificate, "),
+                      CustomText1(
+                        text: "Baliadangi pilot model high school, ",
+                      ),
+                      CustomText1(
+                        text: "Baliadangi, Thakurgaon.",
+                      ),
+                      CustomText1(
+                        text: "GPA: 5.00 out of 5.00",
+                      ),
+                    ],
+                  ),
                 ),
-                margin: const EdgeInsets.symmetric(
-                  horizontal: 5,
-                  vertical: 5,
-                ),
-                decoration: BoxDecoration(
-                  borderRadius:
-                      BorderRadius.circular(5.0.r), // Responsive border radius
-                  color: const Color(0xFF232227),
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Colors.black,
-                      spreadRadius: 0.5,
-                      blurRadius: 5,
-                    )
-                  ],
-                ),
-                child: const Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    CustomText2(text: "Secondary School Certificate, "),
-                    CustomText1(
-                      text: "Baliadangi pilot model high school, ",
-                    ),
-                    CustomText1(
-                      text: "Baliadangi, Thakurgaon.",
-                    ),
-                    CustomText1(
-                      text: "GPA: 5.00 out of 5.00",
-                    ),
-                  ],
+                onHover: (event) {},
+                child: Container(
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 10, // Responsive padding
+                    horizontal: 5,
+                  ),
+                  margin: const EdgeInsets.symmetric(
+                    horizontal: 5,
+                    vertical: 5,
+                  ),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(
+                        5.0.r), // Responsive border radius
+                    color: const Color(0xFF232227),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Colors.black,
+                        spreadRadius: 0.5,
+                        blurRadius: 5,
+                      )
+                    ],
+                  ),
+                  child: const Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      CustomText2(text: "Secondary School Certificate, "),
+                      CustomText1(
+                        text: "Baliadangi pilot model high school, ",
+                      ),
+                      CustomText1(
+                        text: "Baliadangi, Thakurgaon.",
+                      ),
+                      CustomText1(
+                        text: "GPA: 5.00 out of 5.00",
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
