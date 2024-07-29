@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:portfolio/section/education/desktop_education.dart';
 import 'package:portfolio/section/education/mobile_education.dart';
+import 'package:portfolio/section/skills/desktop_skills.dart';
+import 'package:portfolio/section/skills/mobile_skills.dart';
 import 'package:portfolio/widgets/custom_line.dart';
 import 'package:portfolio/widgets/custom_text_1.dart';
 import 'package:portfolio/widgets/custom_text_2.dart';
@@ -39,8 +41,15 @@ class AboutMe extends StatelessWidget {
                         height: 20,
                       ),
                       //Skills section-->
-                      const Skills(),
-                      //Skills section-->
+
+                      if (constraints.maxWidth >= 650)
+                        const DesktopSkills()
+                      else
+                        const MobileSkills(),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      //Education section-->
 
                       if (constraints.maxWidth >= 650)
                         const DesktopEducation()

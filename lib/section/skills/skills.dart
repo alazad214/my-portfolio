@@ -4,15 +4,16 @@ import 'package:portfolio/widgets/custom_line.dart';
 import '../../utils/platform.dart';
 
 class Skills extends StatelessWidget {
-  const Skills({super.key});
+  final width;
+  const Skills({super.key, this.width});
 
   @override
   Widget build(BuildContext context) {
-    return  Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        CustomLine(
+        const CustomLine(
           text: "Skills",
         ),
         Align(
@@ -25,12 +26,12 @@ class Skills extends StatelessWidget {
             children: [
               for (int i = 0; i < skillItems.length; i++)
                 Container(
-                  width: 150,
+                  width: width,
                   alignment: Alignment.center,
-                  padding: const EdgeInsets.symmetric(
-                      vertical: 10, horizontal: 5),
-                  margin: const EdgeInsets.symmetric(
-                      horizontal: 5, vertical: 5),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                  margin:
+                      const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(5.0),
                       color: const Color(0xFF232227),
@@ -46,13 +47,15 @@ class Skills extends StatelessWidget {
                         skillItems[i]["img"],
                         width: 30,
                       ),
-                      const SizedBox(height: 5,),
+                      const SizedBox(
+                        height: 5,
+                      ),
                       Text(
                         skillItems[i]["title"],
                         overflow: TextOverflow.ellipsis,
                         maxLines: 1,
-                        style: const TextStyle(
-                            color: Colors.white, fontSize: 14),
+                        style:
+                            const TextStyle(color: Colors.white, fontSize: 14),
                       ),
                       const SizedBox(
                         width: 20,
