@@ -19,10 +19,10 @@ class MobileEducation extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Container(
-              alignment: Alignment.center,
+              alignment: Alignment.centerLeft,
               padding: const EdgeInsets.symmetric(
                 vertical: 10, // Responsive padding
-                horizontal: 5,
+                horizontal: 10.0,
               ),
               margin: const EdgeInsets.symmetric(
                 horizontal: 5,
@@ -43,7 +43,9 @@ class MobileEducation extends StatelessWidget {
               child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  CustomText2(text: "Diploma in Computer Technology,"),
+                  CustomText2(
+                    fontsize: 19.0,
+                      text: "Diploma in Computer Technology,"),
                   CustomText1(
                     text: "Thakurgaon polytechnic institute,",
                   ),
@@ -56,12 +58,12 @@ class MobileEducation extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(width: 10), // Space between containers
+            const SizedBox(width: 10),
             Container(
-              alignment: Alignment.center,
+              alignment: Alignment.centerLeft,
               padding: const EdgeInsets.symmetric(
                 vertical: 10, // Responsive padding
-                horizontal: 5,
+                horizontal: 10.0,
               ),
               margin: const EdgeInsets.symmetric(
                 horizontal: 5,
@@ -69,7 +71,7 @@ class MobileEducation extends StatelessWidget {
               ),
               decoration: BoxDecoration(
                 borderRadius:
-                    BorderRadius.circular(5.0.r), // Responsive border radius
+                BorderRadius.circular(5.0.r), // Responsive border radius
                 color: const Color(0xFF232227),
                 boxShadow: const [
                   BoxShadow(
@@ -81,10 +83,13 @@ class MobileEducation extends StatelessWidget {
               ),
               child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
+
                 children: [
-                  CustomText2(text: "Secondary School Certificate, "),
+                  CustomText2(
+                      fontsize: 19.0,
+                      text: "Secondary School Certificate,"),
                   CustomText1(
-                    text: "Baliadangi pilot model high school, ",
+                    text: "Baliadangi pilot model high school,",
                   ),
                   CustomText1(
                     text: "Baliadangi, Thakurgaon.",
@@ -95,6 +100,8 @@ class MobileEducation extends StatelessWidget {
                 ],
               ),
             ),
+
+
           ],
         ),
       ],
