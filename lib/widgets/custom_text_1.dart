@@ -22,6 +22,7 @@ class CustomText1 extends StatelessWidget {
       maxLines: maxline,
       style: TextStyle(
         color: color ?? Colors.white,
+
         fontSize: fontsize ?? 12.0, // Responsive font size
       ),
     );
