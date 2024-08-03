@@ -28,7 +28,7 @@ class MobileMain extends StatelessWidget {
             ),
             clipBehavior: Clip.antiAlias,
             child: Image.asset(
-              'assets/images/azad.jpg',
+              'assets/images/mypic.jpg',
               fit: BoxFit.cover,
               width: 200,
               height: 200,

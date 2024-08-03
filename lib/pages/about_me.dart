@@ -16,11 +16,11 @@ class AboutMe extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        return Container(
-          color: const Color(0xFF232227),
-          child: SingleChildScrollView(
+    return SingleChildScrollView(
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          return Container(
+            color: const Color(0xFF232227),
             child: Padding(
               padding: const EdgeInsets.only(left: 20, right: 20, top: 30),
               child: Column(
@@ -76,9 +76,9 @@ class AboutMe extends StatelessWidget {
                 ],
               ),
             ),
-          ),
-        );
-      },
+          );
+        },
+      ),
     );
   }
 }

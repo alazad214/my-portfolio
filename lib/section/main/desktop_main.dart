@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hovering/hovering.dart';
 import 'package:hovering/hovering.dart';
+import 'package:typewritertext/typewritertext.dart';
 
 class DesktopMain extends StatelessWidget {
   const DesktopMain({super.key});
@@ -29,7 +30,7 @@ class DesktopMain extends StatelessWidget {
             ),
             clipBehavior: Clip.antiAlias,
             child: Image.asset(
-              'assets/images/azad.jpg',
+              'assets/images/mypic.jpg',
               fit: BoxFit.cover,
               width: 200,
               height: 200,
@@ -38,20 +39,20 @@ class DesktopMain extends StatelessWidget {
         ),
 
         const SizedBox(width: 20), // Spacing between image and text
-        const Expanded(
+        Expanded(
           child: Center(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   "Hello, I'm ",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 16,
                   ),
                 ),
-                Text(
+                const Text(
                   "Al Azad",
                   style: TextStyle(
                       color: Colors.white,
@@ -60,13 +61,17 @@ class DesktopMain extends StatelessWidget {
                       fontWeight: FontWeight.bold),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(right: 35.0),
-                  child: Text(
+                  padding: const EdgeInsets.only(right: 35.0),
+                  child: TypeWriter.text(
                     "As a Flutter full-stack developer in the works for the last 6 months, I have experience working with GetX, Rest API and Firebase. I am confident in working with any Flutter App Project. My main areas of interest are front-end and full-stack Flutter App Development",
-                    style: TextStyle(
+                    maintainSize: true,
+                    textAlign: TextAlign.start,
+                    repeat: false,
+                    style: const TextStyle(
                       color: Colors.white,
                       fontSize: 14,
                     ),
+                    duration: const Duration(milliseconds: 50),
                   ),
                 ),
               ],

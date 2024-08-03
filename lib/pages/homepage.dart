@@ -17,9 +17,7 @@ class Homepage extends StatelessWidget {
           body: SafeArea(
             child: Center(
               child: ConstrainedBox(
-                constraints: const BoxConstraints(
-                  maxWidth: 900
-                ),
+                constraints: const BoxConstraints(maxWidth: 900),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -30,7 +28,7 @@ class Homepage extends StatelessWidget {
                       const MobileHeader(),
 
                     // TabBarView
-                    const Expanded(
+                    Expanded(
                       child: TabBarView(
                         children: [AboutMe(), Projects(), Articles()],
                       ),
